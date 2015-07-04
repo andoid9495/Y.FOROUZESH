@@ -19,11 +19,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         List<Flower> flowers=new FlowerData().getFlower();
-        LinearLayout layout=(LinearLayout)findViewById(R.id.layout);
+        LinearLayout layout=(LinearLayout)findViewById(R.id.mainLayout);
         for(final Flower flower:flowers){
             Button button=new Button(this);
             button.setText(flower.flowername);
             layout.addView(button);
+
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

@@ -15,7 +15,8 @@ public class FlowerData {
         return flowers;
     }
     public FlowerData(){
-       new Flower("yas",R.drawable.hydrangeas,"this floer has a good smill and same with my name");
-       new Flower("nilofar",R.drawable.chrysanthemum,"this flower is beautiful");
+        flowers.add(new Flower("yas",R.drawable.hydrangeas,"this floer has a good smill and same with my name"));
+        flowers.add(  new Flower("nilofar",R.drawable.chrysanthemum,"this flower is beautiful"));
+
     }
 }
